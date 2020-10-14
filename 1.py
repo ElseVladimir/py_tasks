@@ -6,26 +6,28 @@
 # Следуйте формату вывода из примера, для разделения элементов внутри строки используйте '\t' — символ табуляции.
 # Заметьте, что левым столбцом и верхней строкой выводятся сами числа из заданных отрезков — заголовочные столбец и строка таблицы
 
-#  Sample Input 1:/ Sample Output 1://  Sample Input 2: / Sample Output 2:
-#                 /                 // 1                /	2	3	4
-# 7               / 	5	6       // 3                /1	2	3	4
-# 10              / 7	35	42      // 2                /2	4	6	8
-# 5               / 8	40	48      // 4                /3	6	9	12
-# 6               / 9	45	54      //                  /
-#                 / 10	50	60      //                  /
-
+#  Sample Input 1:/ Sample Output 1:
+# 7               / 	5	6
+# 10              / 7	35	42
+# 5               / 8	40	48
+# 6               / 9	45	54
+#                 / 10	50	60
+#  Sample Input 2: / Sample Output 2:
+# 1                /	2	3	4
+# 3                /1	2	3	4
+# 2                /2	4	6	8
+# 4                /3	6	9	12
+# ------------------------------------------------------------------------------------------------------------------------------
 a = int(input("One: "))
 b = int(input("Two: "))
 c = int(input("Three: "))
 d = int(input("Four: "))
 if a <= 10 and b <= 10 and c <= 10 and d <= 10:
     for digit_ranges in range(c, d + 1):
-        print("\t"+str(digit_ranges), end="\t")
+        print("\t" + str(digit_ranges), end="\t")
     for multiple_ranges in range(a, b + 1):
         print('')
         print(multiple_ranges, end="")
         for digit_rangess in range(c, d + 1):
             count = multiple_ranges * digit_rangess
             print("\t" + str(count), end="\t")
-
-
