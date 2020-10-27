@@ -23,16 +23,14 @@
 # 5) записать результат в словарь
 # 6) провести сравнение значений словаря, вывести самое большее, при равенстве подсчитать количество элементов ключа
 # и вывести с большим значением
-
-# with open('ssss.txt') as inf:
-#     s = inf.readline()
-s = "abc a bCd bC AbC BC BCD bcd ABC"
-counter = 0
-x = 0
-dictionary = dict()
-ss = s.lower().split()
-for i in range(len(ss)):
-    if ss[i] in ss[i + x]:
-        counter += 1
-    x += 1
-    print(ss[i] + ' ' + str(counter) + " times")
+import collections
+sss= ""
+with open('dataset_3363_3.txt') as inf:
+    s = inf.readlines()
+for i in s:
+    sss += i
+ss = sss.lower().split()
+c = collections.Counter()
+for word in ss:
+    c[word] += 1
+print(c.most_common())
