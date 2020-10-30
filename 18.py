@@ -36,7 +36,6 @@
 # У вас есть неограниченное число попыток.
 # Время одной попытки: 5 mins
 
-
 lst = []
 with open("dataset_3363_4.txt") as inf:
     for line in inf:
