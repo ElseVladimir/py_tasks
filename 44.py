@@ -6,7 +6,7 @@ api_url = 'http://api.openweathermap.org/data/2.5/weather'
 
 paramss = {
     'q': city_name,
-    'appid': 'e2881c7dd241fe57e725d9969d580512',
+    'appid': 'apitoken',
     'units': 'metric'
 }
 
