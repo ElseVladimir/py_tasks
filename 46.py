@@ -85,7 +85,7 @@ artists = dict()
 with open('dataset_24476_4.txt', 'r') as f:
     for i in f:
         idlist.append(i.strip())
-token = 'eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IiIsInN1YmplY3RfYXBwbGljYXRpb24iOiI1ZmI3ZGZiNDk1NDZlYzAwMGZhYWQyNTUiLCJleHAiOjE2MDY0OTA2NzYsImlhdCI6MTYwNTg4NTg3NiwiYXVkIjoiNWZiN2RmYjQ5NTQ2ZWMwMDBmYWFkMjU1IiwiaXNzIjoiR3Jhdml0eSIsImp0aSI6IjVmYjdkZmI0Nzk5YjcxM2YxMjBhNTZhYiJ9.U53kxePt_KgVAxfWfplGjb6g--gMwDQA1rNRyBX02rs'
+token = 'token'
 
 headers = {"X-Xapp-Token" : token}
 
